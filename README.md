@@ -1,7 +1,7 @@
 # Collection-of-Macro-and-CustomBuildAction
-With new version of B4X, #Macro is a useful addition.
-It is a shortcut to automate some tasks and provide a very convenient way of using the IDEs.
-It is an alternative to Comment links where you only need a mouse click instead of pressing the Control key and mouse click.
+With new version of B4X, #Macro is a useful addition.\
+It is a shortcut to automate some tasks and provide a very convenient way of using the IDEs.\
+It is an alternative to Comment links where you only need a mouse click instead of pressing the Control key and mouse click.\
 However, for those who prefer to use keyboard shortcuts, e.g Ctrl + 1, Ctrl + 2 it is still supported.
 
 Tutorial : https://www.b4x.com/android/forum/threads/b4x-comment-links-and-macros.119897/
