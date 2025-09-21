@@ -86,7 +86,7 @@ https://www.b4x.com/android/forum/threads/tool-manifest-txt-writer-for-b4xlib.16
 ```
 
 ### Packaging B4XLib or B4XTemplate
-After using the above macro to update the version number in manifest.txt for the B4XLib, this is a quick way to package the file into a b4xlib and automatically put it inside the Additional Library folder.
+After using the above macro to update the version number in manifest.txt for the B4XLib, this is a quick way to package the file into a b4xlib and automatically put it inside the Additional Library folder.\
 Note: I organized my project source code into "source" folder and use "release" folder for the required files which are going into the b4xlib or template.
 
 **B4XLib:** (B4X cross platform library)
