@@ -87,16 +87,16 @@ https://www.b4x.com/android/forum/threads/tool-manifest-txt-writer-for-b4xlib.16
 
 ### Packaging B4XLib or B4XTemplate
 After using the above macro to update the version number in manifest.txt for the B4XLib, this is a quick way to package the file into a b4xlib and automatically put it inside the Additional Library folder.
-
-**Project Template:** (or platform specific b4xlib)
-Note: I organized my project source code into "source" folder and use "release" folder for the only required files which are going into the template.
-```
-#Macro: Title, Publish, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..\..\release&args=-cMf&args=%ADDITIONAL%\Pakai Server%20(5.40).b4xtemplate&args=*
-```
+Note: I organized my project source code into "source" folder and use "release" folder for the required files which are going into the b4xlib or template.
 
 **B4XLib:** (B4X cross platform library)
 ```
 #Macro: Title, Publish, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..\..\release&Args=-cMf&Args=%ADDITIONAL%\..\B4X\%PROJECT_NAME%.b4xlib&Args=*
+```
+
+**Project Template:** (or platform specific b4xlib)
+```
+#Macro: Title, Publish, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..\..\release&args=-cMf&args=%ADDITIONAL%\Pakai Server%20(5.40).b4xtemplate&args=*
 ```
 
 ### Backup B4J server project
