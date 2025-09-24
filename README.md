@@ -4,7 +4,9 @@ It is a shortcut to automate some tasks and provide a very convenient way of usi
 It is an alternative to Comment links where you only need a mouse click instead of pressing the Control key and mouse click.\
 However, for those who prefer to use keyboard shortcuts, e.g Ctrl + 1, Ctrl + 2 it is still supported.
 
-Tutorial : https://www.b4x.com/android/forum/threads/b4x-comment-links-and-macros.119897/
+Tutorial :\
+https://www.b4x.com/android/forum/threads/b4x-comment-links-and-macros.119897/ \
+https://www.b4x.com/android/forum/threads/b4x-custombuildaction.168654/
 
 Here are my collection.\
 You can rename the Title to any name as you like.\
@@ -50,7 +52,7 @@ I find this useful for B4J projects to open the Objects folder (File.DirApp) for
 ### Open GitHub Desktop
 This macro is used to be a comment link to open GitHub Desktop app.
 ```
-#Macro: Title, GitHub Desktop, ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=github&Args=..\..\
+#Macro: Title, GitHub Desktop, ide://run?file=%COMSPEC%&Args=/c&Args=github&Args=..\..\
 ```
 
 ### Download required Additional Libraries
@@ -63,7 +65,7 @@ https://www.b4x.com/android/forum/threads/tool-additional-libraries-downloader.1
 ### Copy a single file from source to release folder
 If the b4xlib has only a single class, this macro can copy or overwrite the destination file.
 ```
-#Macro: Title, Copy, ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=copy&Args=%PROJECT%\MinimaList.bas&Args=%PROJECT%\..\release\MinimaList.bas
+#Macro: Title, Copy, ide://run?file=%COMSPEC%&Args=/c&Args=copy&Args=%PROJECT%\MinimaList.bas&Args=%PROJECT%\..\release\MinimaList.bas
 ```
 
 ### Copy specific files from source to release folder
@@ -128,6 +130,6 @@ https://www.b4x.com/android/forum/threads/solved-error-building-standalone-packa
 This CustomBuildAction is useful for copying the compiled result.jar as a new name into Additional Library folder and called using macro tag.
 ```
 #If Release
-#CustomBuildAction: 2, C:\Windows\System32\cmd.exe, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer-non-ui.jar
+#CustomBuildAction: 2, %COMSPEC%, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer-non-ui.jar
 #End If
 ```
