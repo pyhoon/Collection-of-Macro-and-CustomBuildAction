@@ -71,6 +71,12 @@ I use this macro to copy certain files that need to be updated in release folder
 ```
 #Macro: Title, Update, ide://run?file=%WINDIR%\System32\Robocopy.exe&args=%PROJECT%&args=%PROJECT%\..\release\&args=*.bas&args=*.json&args=*.b4j&args=*.html&args=*.example&args=help.css&args=main.css&args=main.js&args=/S
 ```
+### Rename result.jar
+You can also check other methods here:\
+[(B4J Code Snippet) Rename result.jar using #Macro or #CustomBuildAction](https://www.b4x.com/android/forum/threads/rename-result-jar-using-macro-or-custombuildaction.168616/)
+```
+#Macro: Title, Rename, ide://run?file=%COMSPEC%&Args=/c&Args=IF+EXIST+result.jar&Args=ren&Args=result.jar&Args=libget-non-ui.jar
+```
 
 ### Open release folder
 I use release folder for preparation to create b4xlib or project template, excluding some unnecessary files. It is put at the same level of source folder.
