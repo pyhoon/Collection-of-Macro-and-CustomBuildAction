@@ -8,7 +8,7 @@ Tutorial :\
 https://www.b4x.com/android/forum/threads/b4x-comment-links-and-macros.119897/ \
 https://www.b4x.com/android/forum/threads/b4x-custombuildaction.168654/
 
-Here are my collection.\
+Here is my collection.\
 You can rename the Title to any name as you like.\
 You can also convert them back to comment links.
 
