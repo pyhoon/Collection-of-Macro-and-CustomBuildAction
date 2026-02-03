@@ -25,7 +25,7 @@ This macro is used to be a comment link to export B4XPages project as zip file
 ```
 
 ### Sync json and binary layouts (B4XPages)
-Please check: Tool [B4X] JsonLayouts - synchronize json and binary layouts
+Please check: [Tool [B4X] JsonLayouts - synchronize json and binary layouts](https://www.b4x.com/android/forum/threads/b4x-jsonlayouts-synchronize-json-and-binary-layouts.167398/)
 ```
 #Macro: After Save, Sync Layouts, ide://run?File=%ADDITIONAL%\JsonLayouts.jar&Args=%PROJECT%&Args=%PROJECT_NAME%
 #Macro: Title, JsonLayouts folder, ide://run?File=%WINDIR%\explorer.exe&Args=%PROJECT%\JsonLayouts
@@ -120,7 +120,7 @@ After compiling the server app in release mode, compress the required files as a
 ```
 
 ### Copy jSerial library (jssc.dll) when building Standalone Package
-This CustomBuildAction is provided by Erel to solve my question here:
+This CustomBuildAction is provided by Erel to solve my question here:\
 https://www.b4x.com/android/forum/threads/solved-error-building-standalone-package-with-jserial-library-v1-40.165988/#post-1017771
 ```
 #CustomBuildAction: After Packager, %WINDIR%\System32\robocopy.exe, ..\ temp\build\bin\ jssc.dll
@@ -134,9 +134,8 @@ This CustomBuildAction is useful for copying the compiled result.jar as a new na
 #End If
 ```
 ### Code Bundle – Export Projects as a Single JSON for AI Analysis
-Usage:
-- Download the jar file and put it in the additional libraries folder, preferably under the B4X folder.
-- Add to Main or B4XMainPage:
+Please check:\
+https://www.b4x.com/android/forum/threads/b4x-codebundle-%E2%80%93-export-projects-as-a-single-json-for-ai-analysis.169835/
 ```
 #Macro: Title, Code bundle, ide://run?File=%ADDITIONAL%\..\B4X\CodeBundle.jar&Args=%PROJECT_NAME%
 ```
