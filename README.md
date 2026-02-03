@@ -133,3 +133,10 @@ This CustomBuildAction is useful for copying the compiled result.jar as a new na
 #CustomBuildAction: 2, %COMSPEC%, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer-non-ui.jar
 #End If
 ```
+### Code Bundle – Export Projects as a Single JSON for AI Analysis
+Usage:
+- Download the jar file and put it in the additional libraries folder, preferably under the B4X folder.
+- Add to Main or B4XMainPage:
+```
+#Macro: Title, Code bundle, ide://run?File=%ADDITIONAL%\..\B4X\CodeBundle.jar&Args=%PROJECT_NAME%
+```
