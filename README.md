@@ -25,7 +25,7 @@ This macro is used to be a comment link to export B4XPages project as zip file
 ```
 
 ### Sync json and binary layouts (B4XPages)
-Please check: [Tool [B4X] JsonLayouts - synchronize json and binary layouts](https://www.b4x.com/android/forum/threads/b4x-jsonlayouts-synchronize-json-and-binary-layouts.167398/)
+[Tool [B4X] JsonLayouts - synchronize json and binary layouts](https://www.b4x.com/android/forum/threads/b4x-jsonlayouts-synchronize-json-and-binary-layouts.167398/)
 ```
 #Macro: After Save, Sync Layouts, ide://run?File=%ADDITIONAL%\JsonLayouts.jar&Args=%PROJECT%&Args=%PROJECT_NAME%
 #Macro: Title, JsonLayouts folder, ide://run?File=%WINDIR%\explorer.exe&Args=%PROJECT%\JsonLayouts
@@ -134,7 +134,6 @@ This CustomBuildAction is useful for copying the compiled result.jar as a new na
 #End If
 ```
 ### Code Bundle – Export Projects as a Single JSON for AI Analysis
-Please check:\
 https://www.b4x.com/android/forum/threads/b4x-codebundle-%E2%80%93-export-projects-as-a-single-json-for-ai-analysis.169835/
 ```
 #Macro: Title, Code bundle, ide://run?File=%ADDITIONAL%\..\B4X\CodeBundle.jar&Args=%PROJECT_NAME%
