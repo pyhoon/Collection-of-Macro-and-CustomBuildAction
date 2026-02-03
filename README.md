@@ -86,11 +86,11 @@ I use release folder for preparation to create b4xlib or project template, exclu
 #Macro: Title, Release, ide://run?file=%WINDIR%\SysWOW64\explorer.exe&Args=%PROJECT%\..\release
 ```
 
-### Update version in manifest.txt using Manifest Writer
+### Update manifest.txt using Manifest Writer
 I use this tool to update new version value in manifest.txt before distributing the new b4xlib or project template. Other values can also be updated. This is more convenient than opening the release folder from file system and edit the file manually.
 https://www.b4x.com/android/forum/threads/tool-manifest-txt-writer-for-b4xlib.168723/
 ```
-#Macro: Title, Version, ide://run?file=%JAVABIN%\java.exe&Args=-jar&Args=%ADDITIONAL%\..\B4X\manifest-writer-non-ui.jar&Args=%PROJECT%\..\release&Args=%PROJECT%\..\release&Args=Version&Args=2.10
+#Macro: Title, Version, ide://run?file=%JAVABIN%\java.exe&Args=-jar&Args=%ADDITIONAL%\..\B4X\manifest-writer.jar&Args=%PROJECT%\..\release&Args=%PROJECT%\..\release&Args=Version&Args=2.10
 ```
 
 ### Packaging B4XLib or B4XTemplate
@@ -104,7 +104,7 @@ Note: I organized my project source code into "source" folder and use "release" 
 
 **Project Template:** (or platform specific b4xlib)
 ```
-#Macro: Title, Publish, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..\..\release&args=-cMf&args=%ADDITIONAL%\Pakai Server%20(5.40).b4xtemplate&args=*
+#Macro: Title, Publish, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..\..\release&args=-cMf&args=%ADDITIONAL%\Pakai+Server+(6.00).b4xtemplate&args=*
 ```
 
 ### Backup B4J server project
@@ -130,7 +130,7 @@ https://www.b4x.com/android/forum/threads/solved-error-building-standalone-packa
 This CustomBuildAction is useful for copying the compiled result.jar as a new name into Additional Library folder and called using macro tag.
 ```
 #If Release
-#CustomBuildAction: 2, %COMSPEC%, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer-non-ui.jar
+#CustomBuildAction: 2, %COMSPEC%, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer.jar
 #End If
 ```
 ### Code Bundle – Export Projects as a Single JSON for AI Analysis
