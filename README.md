@@ -1,4 +1,4 @@
-# Collection-of-Macro-and-CustomBuildAction
+# Collection of #Macro and #CustomBuildAction
 With new version of B4X, #Macro is a useful addition.\
 It is a shortcut to automate some tasks and provide a very convenient way of using the IDEs.\
 It is an alternative to Comment links where you only need a mouse click instead of pressing the Control key and mouse click.\
