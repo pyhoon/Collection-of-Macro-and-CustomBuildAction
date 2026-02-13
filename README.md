@@ -113,10 +113,18 @@ To backup my B4J server projects, I use the following macro.
 #Macro: Title, Backup, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=..&Args=-cMf&Args=%PROJECT_NAME%_2025-09-17_1821.zip&args=Files&args=Objects\www&args=Objects\config.*&args=Objects\LICENSE&args=*.bas&args=*.b4j&args=*.b4j.meta&args=libs.json
 ```
 
-### Publish server app
-After compiling the server app in release mode, compress the required files as a single zip file for uploading to VPS server.
+### Publish server app (Macro)
+After compiling the server app in release mode, we can create a single zip file for uploading to VPS server.
 ```
 #Macro: Title, Deploy, ide://run?file=%JAVABIN%\jar.exe&WorkingDirectory=../Objects&args=-cMf&args=Publish.zip&args=www&args=*.jar&args=*.ini
+```
+
+### Publish server app (CustomBuildAction)
+Auto create dist.zip upon release compilation
+```
+#If Release
+#CustomBuildAction: 2, %JAVABIN%\jar.exe, -cMf dist.zip www %PROJECT_NAME%.jar
+#End If
 ```
 
 ### Copy jSerial library (jssc.dll) when building Standalone Package
