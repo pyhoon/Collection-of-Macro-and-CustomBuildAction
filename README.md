@@ -146,3 +146,8 @@ https://www.b4x.com/android/forum/threads/b4x-codebundle-%E2%80%93-export-projec
 ```
 #Macro: Title, Code bundle, ide://run?File=%ADDITIONAL%\..\B4X\CodeBundle.jar&Args=%PROJECT_NAME%
 ```
+### Start PowerShell from Project Directory
+https://www.b4x.com/android/forum/threads/feature-request-integrated-terminal-powershell-in-b4a-and-b4i-ide.171567/post-1049315
+```
+#Macro: Title, PowerShell, ide://run?File=%COMSPEC%&args=/c&args=start&args=/D&args=%PROJECT%&args=powershell
+```
