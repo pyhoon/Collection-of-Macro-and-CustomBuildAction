@@ -49,10 +49,22 @@ I find this useful for B4J projects to open the Objects folder (File.DirApp) for
 #Macro: Title, Objects, ide://run?file=%WINDIR%\SysWOW64\explorer.exe&args=%PROJECT%\Objects
 ```
 
+### Open release folder
+I use release folder for preparation to create b4xlib or project template, excluding some unnecessary files. It is put at the same level of source folder.
+```
+#Macro: Title, Release, ide://run?file=%WINDIR%\SysWOW64\explorer.exe&Args=%PROJECT%\..\release
+```
+
 ### Open GitHub Desktop
 This macro is used to be a comment link to open GitHub Desktop app.
 ```
 #Macro: Title, GitHub Desktop, ide://run?file=%COMSPEC%&Args=/c&Args=github&Args=..\..\
+```
+
+### Start PowerShell from Project Directory
+https://www.b4x.com/android/forum/threads/feature-request-integrated-terminal-powershell-in-b4a-and-b4i-ide.171567/post-1049315
+```
+#Macro: Title, PowerShell, ide://run?File=%COMSPEC%&args=/c&args=start&args=/D&args=%PROJECT%&args=powershell
 ```
 
 ### Download required Additional Libraries
@@ -78,12 +90,6 @@ You can also check other methods here:\
 [(B4J Code Snippet) Rename result.jar using #Macro or #CustomBuildAction](https://www.b4x.com/android/forum/threads/rename-result-jar-using-macro-or-custombuildaction.168616/)
 ```
 #Macro: Title, Rename, ide://run?file=%COMSPEC%&Args=/c&Args=IF+EXIST+result.jar&Args=ren&Args=result.jar&Args=libget-non-ui.jar
-```
-
-### Open release folder
-I use release folder for preparation to create b4xlib or project template, excluding some unnecessary files. It is put at the same level of source folder.
-```
-#Macro: Title, Release, ide://run?file=%WINDIR%\SysWOW64\explorer.exe&Args=%PROJECT%\..\release
 ```
 
 ### Update manifest.txt using Manifest Writer
@@ -141,13 +147,9 @@ This CustomBuildAction is useful for copying the compiled result.jar as a new na
 #CustomBuildAction: 2, %COMSPEC%, /c copy %PROJECT%\Objects\result.jar %ADDITIONAL%\..\B4X\manifest-writer.jar
 #End If
 ```
+
 ### Code Bundle – Export Projects as a Single JSON for AI Analysis
 https://www.b4x.com/android/forum/threads/b4x-codebundle-%E2%80%93-export-projects-as-a-single-json-for-ai-analysis.169835/
 ```
 #Macro: Title, Code bundle, ide://run?File=%ADDITIONAL%\..\B4X\CodeBundle.jar&Args=%PROJECT_NAME%
-```
-### Start PowerShell from Project Directory
-https://www.b4x.com/android/forum/threads/feature-request-integrated-terminal-powershell-in-b4a-and-b4i-ide.171567/post-1049315
-```
-#Macro: Title, PowerShell, ide://run?File=%COMSPEC%&args=/c&args=start&args=/D&args=%PROJECT%&args=powershell
 ```
